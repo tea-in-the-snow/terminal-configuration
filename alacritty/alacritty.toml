@@ -11,15 +11,15 @@ dimensions = { columns = 120, lines = 30}
 
 [font]
 
-normal = { family = "GeistMono Nerd Font Mono", style = "Medium" }
+normal = { family = "MartianMono Nerd Font Mono", style = "Medium" }
 
-bold = { family = "GeistMono Nerd Font Mono", style = "Medium" }
+bold = { family = "MartianMono Nerd Font Mono", style = "Bold" }
 
-italic = { family = "GeistMono Nerd Font Mono", style = "Medium" }
+italic = { family = "MartianMono Nerd Font Mono", style = "Italic" }
 
-bold_italic = { family = "GeistMono Nerd Font Mono", style = "Medium" }
+bold_italic = { family = "MartianMono Nerd Font Mono", style = "Bold" }
 
-size = 13
+size = 12
 
 [cursor]
 
