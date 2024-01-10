@@ -105,28 +105,33 @@ config.color_scheme = "Novel"
 
 -- config.color_scheme = 'Github'
 config.window_background_gradient = {
-	colors = { "pink", "yellow" },
+	colors = { "white", "pink" },
 	orientation = {
 		Radial = {
 			-- Specifies the x coordinate of the center of the circle,
 			-- in the range 0.0 through 1.0.  The default is 0.5 which
 			-- is centered in the X dimension.
-			cx = 0.75,
+			cx = 0.5,
 
 			-- Specifies the y coordinate of the center of the circle,
 			-- in the range 0.0 through 1.0.  The default is 0.5 which
 			-- is centered in the Y dimension.
-			cy = 0.75,
+			cy = 0.5,
 
 			-- Specifies the radius of the notional circle.
 			-- The default is 0.5, which combined with the default cx
 			-- and cy values places the circle in the center of the
 			-- window, with the edges touching the window edges.
 			-- Values larger than 1 are possible.
-			radius = 1.9,
+			radius = 1.0,
 		},
 	},
 }
+
+-- background
+-- config.win32_system_backdrop = "Acrylic"
+config.window_background_opacity = 0.9
+config.text_background_opacity = 0.8
 
 config.font = wezterm.font_with_fallback({
 	-- "Comic Mono",
@@ -148,23 +153,18 @@ config.font = wezterm.font_with_fallback({
 })
 config.font_size = 14.0
 
--- background
--- config.win32_system_backdrop = "Acrylic"
-config.window_background_opacity = 0.95
-config.text_background_opacity = 0.8
-
 -- config.command_palette_bg_color = "#333333"
-config.command_palette_bg_color = "#2F2F4F"
+-- config.command_palette_bg_color = "#2F2F4F"
 
-wezterm.on("gui-startup", function(cmd)
-	local tab, pane, window = wezterm.mux.spawn_window(cmd or {})
-	-- Create a split occupying the right 1/3 of the screen
-	pane:split({ size = 0.5 })
-	-- Create another split in the right of the remaining 2/3
-	-- of the space; the resultant split is in the middle
-	-- 1/3 of the display and has the focus.
-	-- pane:split { size = 0.5 }
-end)
+-- -- wezterm.on("gui-startup", function(cmd)
+-- 	local tab, pane, window = wezterm.mux.spawn_window(cmd or {})
+-- 	-- Create a split occupying the right 1/3 of the screen
+-- 	pane:split({ size = 0.5 })
+-- 	-- Create another split in the right of the remaining 2/3
+-- 	-- of the space; the resultant split is in the middle
+-- 	-- 1/3 of the display and has the focus.
+-- 	-- pane:split { size = 0.5 }
+-- end)
 
 config.window_padding = {
 	left = 20,
