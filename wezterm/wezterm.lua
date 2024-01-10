@@ -132,8 +132,8 @@ config.window_background_gradient = {
 
 -- background
 -- config.win32_system_backdrop = "Acrylic"
-config.window_background_opacity = 0.9
-config.text_background_opacity = 0.8
+config.window_background_opacity = 0.8
+config.text_background_opacity = 1
 
 config.font = wezterm.font_with_fallback({
 	-- "Comic Mono",
