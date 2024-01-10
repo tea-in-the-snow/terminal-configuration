@@ -68,7 +68,10 @@ config.window_background_gradient = {
 	-- 	"#302b63",
 	-- 	"#24243e",
 	-- },
-	colors = { "#EEBD89", "#D13ABD" },
+	-- colors = { "#EEBD89", "#D13ABD" },
+	-- colors = { "#EEBD89", "white" },
+	-- colors = { "white", "#E13A99" },
+	colors = { "white", "violet" },
 	-- preset = "Warm",
 
 	-- Instead of specifying `colors`, you can use one of a number of
