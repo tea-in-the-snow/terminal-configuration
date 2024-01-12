@@ -15,8 +15,8 @@ local act = wezterm.action
 -- This is where you actually apply your config choices
 
 -- run wsl bu default
-config.default_prog = { "wsl" }
-config.default_workspace = "~"
+config.default_prog = { "debian" }
+-- config.default_workspace = "~"
 
 config.detect_password_input = true
 
