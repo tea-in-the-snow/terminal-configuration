@@ -11,3 +11,11 @@ My own terminal configuration.
 ## Wezterm
 
 - On Windows, the config file should be located at: %home%\.wezterm
+
+## zsh
+
+- Need to install Zinit First.
+
+- The config file should be $HOME/.zshrc.
+
+- It is much faster than oh-my-zsh.
