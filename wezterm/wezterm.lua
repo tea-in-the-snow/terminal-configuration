@@ -146,9 +146,10 @@ config.font = wezterm.font_with_fallback({
 
 	-- "ComicShannsMono Nerd Font Mono",
 	-- "DaddyTimeMono Nerd Font Mono",
-	"FantasqueSansM Nerd Font Mono",
-	"CaskaydiaCove Nerd Font Mono",
 	"Hack Nerd Font Mono",
+	"FantasqueSansM Nerd Font Mono",
+	"Hurmit Nerd Font Mono",
+	"CaskaydiaCove Nerd Font Mono",
 	-- "Cascadia Mono",
 	"FiraCode Nerd Font Mono",
 	"DengXian", --Chinese
