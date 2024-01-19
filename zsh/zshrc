@@ -2,6 +2,7 @@
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
+setopt nomatch
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
@@ -15,24 +16,24 @@ compinit
 eval "$(starship init zsh)"
 
 # add the path of go and those installed by go
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:/home/tea-in-the-snow/go/bin
+# export PATH=$PATH:/usr/local/go/bin
+# export PATH=$PATH:/home/tea-in-the-snow/go/bin
 
 # alias
 alias c='clear'
 alias e='exit'
-alias lz='lazygit'
+alias lg='lazygit'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
-	test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-	alias ls='ls --color=auto'
-	alias dir='dir --color=auto'
-	alias vdir='vdir --color=auto'
+        test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+        alias ls='ls --color=auto'
+        alias dir='dir --color=auto'
+        alias vdir='vdir --color=auto'
 
-	alias grep='grep --color=auto'
-	alias fgrep='fgrep --color=auto'
-	alias egrep='egrep --color=auto'
+        alias grep='grep --color=auto'
+        alias fgrep='fgrep --color=auto'
+        alias egrep='egrep --color=auto'
 fi
 
 # some more ls aliases
@@ -80,3 +81,9 @@ zinit light agkozak/zsh-z
 zinit snippet OMZ::plugins/git/git.plugin.zsh
 zinit snippet OMZ::plugins/safe-paste/safe-paste.plugin.zsh
 zinit snippet OMZ::plugins/command-not-found/command-not-found.plugin.zsh
+
+# proxy
+# export http_proxy=http://127.0.0.1:7890
+# export https_proxy=http://127.0.0.1:7890
+alias proxy_on='export http_proxy=http://127.0.0.1:7890 && export https_proxy=http://127.0.0.1:7890 && echo -e http and https proxy onn'
+alias proxy_off='unset https_proxy http_proxy && echo -e http and https proxy off'
