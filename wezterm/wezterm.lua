@@ -70,7 +70,7 @@ config.window_background_gradient = {
 	-- colors = { "#EEBD89", "#D13ABD" },
 	-- colors = { "#EEBD89", "white" },
 	-- colors = { "white", "#E13A99" },
-	colors = { "white", "violet" },
+	colors = { "violet", "lightcyan" },
 	-- preset = "Warm",
 
 	-- Instead of specifying `colors`, you can use one of a number of
@@ -145,8 +145,10 @@ config.font = wezterm.font_with_fallback({
 
 	-- "ComicShannsMono Nerd Font Mono",
 	-- "DaddyTimeMono Nerd Font Mono",
+	"CodeNewRoman Nerd Font Mono",
 	"Hack Nerd Font Mono",
 	"FantasqueSansM Nerd Font Mono",
+	"SpaceMono Nerd Font Mono",
 	"Hurmit Nerd Font Mono",
 	"CaskaydiaCove Nerd Font Mono",
 	-- "Cascadia Mono",
@@ -156,7 +158,7 @@ config.font = wezterm.font_with_fallback({
 	"Lotuscoder",
 	"MT Extra",
 })
-config.font_size = 19.0
+config.font_size = 20.0
 
 -- config.command_palette_bg_color = "#333333"
 -- config.command_palette_bg_color = "#2F2F4F"
