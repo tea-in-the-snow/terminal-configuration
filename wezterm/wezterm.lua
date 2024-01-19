@@ -15,7 +15,6 @@ local act = wezterm.action
 -- This is where you actually apply your config choices
 
 -- run wsl bu default
-config.default_prog = { "debian" }
 -- config.default_workspace = "~"
 
 config.detect_password_input = true
@@ -157,7 +156,7 @@ config.font = wezterm.font_with_fallback({
 	"Lotuscoder",
 	"MT Extra",
 })
-config.font_size = 14.0
+config.font_size = 19.0
 
 -- config.command_palette_bg_color = "#333333"
 -- config.command_palette_bg_color = "#2F2F4F"
