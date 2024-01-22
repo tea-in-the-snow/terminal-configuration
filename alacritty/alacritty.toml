@@ -1,9 +1,8 @@
-# themes : https://github.com/alacritty/alacritty-theme
-import = [ "C:\\Users\\xiashaoran\\AppData\\Roaming\\alacritty\\themes\\themes\\pencil_dark.toml" ]
+import = [ "~/.config/alacritty/themes/themes/noctis-lux.toml" ]
 
 [window]
 
-opacity = 0.7
+opacity = 0.9
 
 dimensions = { columns = 120, lines = 30}
 
