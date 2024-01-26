@@ -184,6 +184,11 @@ config.window_padding = {
 
 config.window_close_confirmation = "NeverPrompt"
 
+-- cursor
+config.default_cursor_style = "BlinkingBar"
+config.cursor_blink_rate = 600
+config.cursor_blink_ease_out = "Linear"
+
 -- keymappings
 config.keys = {
 	{
