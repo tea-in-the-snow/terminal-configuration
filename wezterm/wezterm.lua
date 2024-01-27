@@ -21,9 +21,7 @@ config.detect_password_input = true
 
 -- color_schemes
 -- dark
--- config.color_scheme = "AdventureTime"
--- config.color_scheme = "Bitmute (terminal.sexy)"
--- config.color_scheme = "Apple Classic"
+config.color_scheme = "Apple Classic"
 -- config.color_scheme = "Chester"
 -- config.color_scheme = "DanQing (base16)"
 -- config.color_scheme = "Zenburn"
@@ -39,7 +37,7 @@ config.detect_password_input = true
 
 -- light
 -- config.color_scheme = "Builtin Solarized Light"
-config.color_scheme = "Catppuccin Latte"
+-- config.color_scheme = "Catppuccin Latte"
 -- config.color_scheme = "dawnfox"
 -- config.color_scheme = "Default (light) (terminal.sexy)"
 -- config.color_scheme = "Solarized Light (Gogh)"
@@ -49,65 +47,6 @@ config.color_scheme = "Catppuccin Latte"
 -- config.font = wezterm.font("FiraCode Nerd Font Mono")
 -- config.font = wezterm.font("Cascadia Code")
 
--- config.window_background_gradient = {
--- Can be "Vertical" or "Horizontal".  Specifies the direction
--- in which the color gradient varies.  The default is "Horizontal",
--- with the gradient going from left-to-right.
--- Linear and Radial gradients are also supported; see the other
--- examples below
--- orientation = "Horizontal",
--- orientation = { Linear = { angle = -45.0 } },
-
--- Specifies the set of colors that are interpolated in the gradient.
--- Accepts CSS style color specs, from named colors, through rgb
--- strings and more
--- colors = {
--- 	"#0000FF",
--- 	-- "#0f0c29",
--- 	"#302b63",
--- 	"#24243e",
--- },
--- colors = { "#EEBD89", "#D13ABD" },
--- colors = { "#EEBD89", "white" },
--- colors = { "white", "#E13A99" },
--- colors = { "violet", "lightblue" },
--- preset = "Warm",
-
--- Instead of specifying `colors`, you can use one of a number of
--- predefined, preset gradients.
--- A list of presets is shown in a section below.
--- preset = "YlOrBr",
-
--- Specifies the interpolation style to be used.
--- "Linear", "Basis" and "CatmullRom" as supported.
--- The default is "Linear".
--- interpolation = "Linear",
-
--- How the colors are blended in the gradient.
--- "Rgb", "LinearRgb", "Hsv" and "Oklab" are supported.
--- The default is "Rgb".
--- blend = "Rgb",
-
--- To avoid vertical color banding for horizontal gradients, the
--- gradient position is randomly shifted by up to the `noise` value
--- for each pixel.
--- Smaller values, or 0, will make bands more prominent.
--- The default value is 64 which gives decent looking results
--- on a retina macbook pro display.
--- noise = 64,
-
--- By default, the gradient smoothly transitions between the colors.
--- You can adjust the sharpness by specifying the segment_size and
--- segment_smoothness parameters.
--- segment_size configures how many segments are present.
--- segment_smoothness is how hard the edge is; 0.0 is a hard edge,
--- 1.0 is a soft edge.
-
--- segment_size = 11,
--- segment_smoothness = 0.0,
--- }
-
--- config.color_scheme = 'Github'
 -- config.window_background_gradient = {
 -- 	colors = { "white", "pink" },
 -- 	orientation = {
@@ -134,7 +73,7 @@ config.color_scheme = "Catppuccin Latte"
 
 -- background
 -- config.win32_system_backdrop = "Acrylic"
-config.window_background_opacity = 0.8
+config.window_background_opacity = 0.95
 config.text_background_opacity = 1
 
 config.font = wezterm.font_with_fallback({
