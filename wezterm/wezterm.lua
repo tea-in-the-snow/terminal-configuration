@@ -73,7 +73,7 @@ config.color_scheme = "Apple Classic"
 
 -- background
 -- config.win32_system_backdrop = "Acrylic"
-config.window_background_opacity = 0.95
+config.window_background_opacity = 0.9
 config.text_background_opacity = 1
 
 config.font = wezterm.font_with_fallback({
@@ -97,7 +97,7 @@ config.font = wezterm.font_with_fallback({
 	"Lotuscoder",
 	"MT Extra",
 })
-config.font_size = 20.0
+config.font_size = 22.0
 
 -- config.command_palette_bg_color = "#333333"
 -- config.command_palette_bg_color = "#2F2F4F"
