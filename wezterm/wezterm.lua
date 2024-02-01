@@ -73,18 +73,22 @@ config.color_scheme = "Apple Classic"
 
 -- background
 -- config.win32_system_backdrop = "Acrylic"
-config.window_background_opacity = 1
-config.text_background_opacity = 1
--- config.window_background_image = "C:/Users/xiashaoran/Pictures/Saved Pictures/starwars/1.png"
+-- config.window_background_opacity = 0.9
+-- config.window_background_image = "./2.jpg"
 config.background = {
 	{
 		source = {
-			File = "C:/Users/xiashaoran/Pictures/Saved Pictures/dark/2.jpg",
+			-- File = "/home/tea-in-the-snow/Pictures/wallpaper/v2-deb75bfa2835b28a27f27377f4173caf_r.png",
+			File = "/home/tea-in-the-snow/Pictures/dark/2.jpg",
+			-- File = "/home/tea-in-the-snow/Pictures/wallpaper/7.png",
+			-- File = "/home/tea-in-the-snow/Pictures/wallpaper/v2-d29a9ed9425ed9aae1d78cd5e9f3a9f1_r.png",
+			-- File = "/home/tea-in-the-snow/Pictures/dark/1.jpg",
+			-- File = "C:/Users/xiashaoran/Pictures/Saved Pictures/dark/2.jpg"
 		},
 		height = "Cover",
 		-- opacity = 0.5,
 		hsb = {
-			brightness = 0.7,
+			brightness = 0.8,
 			-- hue = 0.5,
 			-- saturation = 0.5,
 		},
