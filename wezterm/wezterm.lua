@@ -73,8 +73,34 @@ config.color_scheme = "Apple Classic"
 
 -- background
 -- config.win32_system_backdrop = "Acrylic"
-config.window_background_opacity = 0.9
+config.window_background_opacity = 1
 config.text_background_opacity = 1
+-- config.window_background_image = "C:/Users/xiashaoran/Pictures/Saved Pictures/starwars/1.png"
+config.background = {
+	{
+		source = {
+			File = "C:/Users/xiashaoran/Pictures/Saved Pictures/dark/2.jpg",
+		},
+		height = "Cover",
+		-- opacity = 0.5,
+		hsb = {
+			brightness = 0.7,
+			-- hue = 0.5,
+			-- saturation = 0.5,
+		},
+	},
+}
+-- config.window_background_image_hsb = {
+-- 	-- Darken the background image by reducing it to 1/3rd
+-- 	brightness = 0.1,
+--
+-- 	-- You can adjust the hue by scaling its value.
+-- 	-- a multiplier of 1.0 leaves the value unchanged.
+-- 	hue = 1.0,
+--
+-- 	-- You can adjust the saturation also.
+-- 	saturation = 1.0,
+-- }
 
 config.font = wezterm.font_with_fallback({
 	-- "Comic Mono",
