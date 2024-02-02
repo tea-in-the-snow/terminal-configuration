@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Lines configured by zsh-newuser-install
 # HISTFILE=~/.histfile
 HISTFILE=~/.zhistory
@@ -16,7 +23,7 @@ compinit
 # export HISTFILE = "~/.histfile"
 
 # Load starship
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 # add the path of go and those installed by go
 # export PATH=$PATH:/usr/local/go/bin
@@ -71,6 +78,8 @@ zinit light-mode for \
 
 ### End of Zinit's installer chunk
 
+zinit ice depth=1; zinit light romkatv/powerlevel10k
+
 # some oh-my-zsh library
 zinit snippet OMZ::lib/completion.zsh
 zinit snippet OMZ::lib/git.zsh
@@ -94,3 +103,21 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#87afff"
 # export https_proxy=http://127.0.0.1:7890
 alias proxy_on='export http_proxy=http://127.0.0.1:7890 && export https_proxy=http://127.0.0.1:7890 && echo -e http and https proxy on'
 alias proxy_off='unset https_proxy http_proxy && echo -e http and https proxy off'
+
+# HSTR configuration - add this to ~/.zshrc
+alias hh=hstr                    # hh to be alias for hstr
+setopt histignorespace           # skip cmds w/ leading space from history
+export HSTR_CONFIG=hicolor       # get more colors
+hstr_no_tiocsti() {
+    zle -I
+    { HSTR_OUT="$( { </dev/tty hstr ${BUFFER}; } 2>&1 1>&3 3>&- )"; } 3>&1;
+    BUFFER="${HSTR_OUT}"
+    CURSOR=${#BUFFER}
+    zle redisplay
+}
+zle -N hstr_no_tiocsti
+bindkey '\C-r' hstr_no_tiocsti
+export HSTR_TIOCSTI=n
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
