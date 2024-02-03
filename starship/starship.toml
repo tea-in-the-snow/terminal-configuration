@@ -175,7 +175,7 @@ show_always = true
 min_time = 500
 format = 'underwent [$duration](bold yellow)'
 show_notifications = true
-min_time_to_notify = 4000
+min_time_to_notify = 30000
 
 [directory]
 truncation_symbol = '…/'
