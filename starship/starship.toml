@@ -1,0 +1,204 @@
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[conda]
+# symbol = " "
+
+[crystal]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[fennel]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[git_branch]
+# symbol = " "
+
+[golang]
+symbol = " "
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[kotlin]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[meson]
+symbol = "󰔷 "
+
+[nim]
+symbol = "󰆥 "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[ocaml]
+symbol = " "
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = "󰍲 "
+
+[package]
+symbol = "󰏗 "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[pijul_channel]
+symbol = " "
+
+[rlang]
+symbol = "󰟔 "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[swift]
+symbol = " "
+
+[zig]
+symbol = " "
+
+[character]
+success_symbol = 'INSERT [❯](bold green) '
+error_symbol = 'INSERT [❯](bold red)'
+vimcmd_symbol = 'NORMAL [❮](bold green)'
+vimcmd_visual_symbol = 'VISUAL [❮](bold yellow)'
+vimcmd_replace_one_symbol = 'NORMAL [❮](bold purple)'
+vimcmd_replace_symbol = 'NORMAL [❮](bold purple)'
+
+[os]
+format = "$symbol[($name )]($style)"
+style = "bold blue italic"
+disabled = false
+
+[username]
+style_user = 'green italic underline'
+style_root = 'white bold italic'
+format = 'user: [$user]($style) '
+disabled = false
+show_always = true
+
+[cmd_duration]
+min_time = 500
+format = 'underwent [$duration](bold yellow)'
+show_notifications = true
+min_time_to_notify = 4000
+
+[directory]
+truncation_symbol = '…/'
+read_only = " 󰌾"
+read_only_style = "yellow"
+format = 'at [$path]($style)[$read_only]($read_only_style) '
+
+[env_var]
+variable = 'SHELL'
+default = 'unknown shell'
+style = 'white'
+disabled = true
+
+[memory_usage]
+disabled = true
+threshold = -1
+style = 'bold dimmed green'
+symbol = "󰍛 "
+
+[python]
+# pyenv_version_name = true
+symbol = " "
+version_format = 'py${raw}'
+
+[shell]
+disabled = false
+zsh_indicator = '🚀'
