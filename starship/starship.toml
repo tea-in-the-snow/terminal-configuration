@@ -151,6 +151,7 @@ symbol = " "
 symbol = " "
 
 [character]
+format = '🚀 $symbol'
 success_symbol = 'INSERT [❯](bold green) '
 error_symbol = 'INSERT [❯](bold red)'
 vimcmd_symbol = 'NORMAL [❮](bold green)'
@@ -201,4 +202,5 @@ version_format = 'py${raw}'
 
 [shell]
 disabled = false
-zsh_indicator = '🚀'
+zsh_indicator = 'zsh'
+style = 'yellow bold'
