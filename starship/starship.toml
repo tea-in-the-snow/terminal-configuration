@@ -153,11 +153,11 @@ symbol = " "
 [character]
 format = '🚀 $symbol'
 success_symbol = 'INSERT [❯](bold green) '
-error_symbol = 'INSERT [❯](bold red)'
-vimcmd_symbol = 'NORMAL [❮](bold green)'
-vimcmd_visual_symbol = 'VISUAL [❮](bold yellow)'
-vimcmd_replace_one_symbol = 'NORMAL [❮](bold purple)'
-vimcmd_replace_symbol = 'NORMAL [❮](bold purple)'
+error_symbol = 'INSERT [❯](bold red) '
+vimcmd_symbol = 'NORMAL [❮](bold green) '
+vimcmd_visual_symbol = 'VISUAL [❮](bold yellow) '
+vimcmd_replace_one_symbol = 'NORMAL [❮](bold purple) '
+vimcmd_replace_symbol = 'NORMAL [❮](bold purple) '
 
 [os]
 format = "$symbol[($name )]($style)"
