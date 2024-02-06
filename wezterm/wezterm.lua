@@ -21,8 +21,8 @@ config.detect_password_input = true
 
 -- color_schemes
 -- dark
--- config.color_scheme = "Apple Classic"
-config.color_scheme = "Chester"
+config.color_scheme = "Apple Classic"
+-- config.color_scheme = "Chester"
 -- config.color_scheme = "DanQing (base16)"
 -- config.color_scheme = "Zenburn"
 -- config.color_scheme = "Unikitty Reversible (base16)"
@@ -81,14 +81,14 @@ config.color_scheme = "Chester"
 config.background = {
 	{
 		source = {
-			-- File = "/home/tea-in-the-snow/Pictures/wallpaper/v2-deb75bfa2835b28a27f27377f4173caf_r.png",
-			File = "/home/tea-in-the-snow/Pictures/dark/2.jpg",
-			-- File = "/home/tea-in-the-snow/Pictures/wallpaper/4.jpg",
-			-- File = "/home/tea-in-the-snow/Pictures/SavedPictures/comic/1.png",
-			-- File = "/home/tea-in-the-snow/Pictures/wallpaper/v2-d29a9ed9425ed9aae1d78cd5e9f3a9f1_r.png",
-			-- File = "/home/tea-in-the-snow/Pictures/wallpaper/12.jpg",
-			-- File = "/home/tea-in-the-snow/Pictures/dark/1.jpg",
-			-- File = "C:/Users/xiashaoran/Pictures/Saved Pictures/dark/2.jpg",
+			-- File = "/home/shaoran/图片/wallpaper/v2-deb75bfa2835b28a27f27377f4173caf_r.png",
+			File = "/home/shaoran/图片/dark/2.jpg",
+			-- File = "/home/shaoran/图片/wallpaper/4.jpg",
+			-- File = "/home/shaoran/图片/SavedPictures/comic/1.png",
+			-- File = "/home/shaoran/图片/wallpaper/v2-d29a9ed9425ed9aae1d78cd5e9f3a9f1_r.png",
+			-- File = "/home/shaoran/图片/wallpaper/12.jpg",
+			-- File = "/home/shaoran/图片/dark/1.jpg",
+			-- File = "C:/Users/xiashaoran/图片/Saved Pictures/dark/2.jpg",
 		},
 		height = "Cover",
 		-- opacity = 0.5,
@@ -132,7 +132,7 @@ config.font = wezterm.font_with_fallback({
 	"Lotuscoder",
 	"MT Extra",
 })
-config.font_size = 22.0
+config.font_size = 15.0
 
 -- config.command_palette_bg_color = "#333333"
 -- config.command_palette_bg_color = "#2F2F4F"
