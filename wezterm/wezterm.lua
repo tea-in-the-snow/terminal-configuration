@@ -21,7 +21,7 @@ config.detect_password_input = true
 
 -- color_schemes
 -- dark
-config.color_scheme = "Apple Classic"
+-- config.color_scheme = "Apple Classic"
 -- config.color_scheme = "Chester"
 -- config.color_scheme = "DanQing (base16)"
 -- config.color_scheme = "Zenburn"
@@ -44,7 +44,7 @@ config.color_scheme = "Apple Classic"
 -- config.color_scheme = "Mocha (light) (terminal.sexy)"
 -- config.color_scheme = "purplepeter"
 -- config.color_scheme = "Solarized Light (Gogh)"
--- config.color_scheme = "Novel"
+config.color_scheme = "Novel"
 
 -- config.font = wezterm.font("Hack Nerd Font Mono")
 -- config.font = wezterm.font("FiraCode Nerd Font Mono")
@@ -81,19 +81,19 @@ config.color_scheme = "Apple Classic"
 config.background = {
 	{
 		source = {
+			File = "/home/shaoran/图片/terminal-background/2.png",
 			-- File = "/home/shaoran/图片/wallpaper/v2-deb75bfa2835b28a27f27377f4173caf_r.png",
-			File = "/home/shaoran/图片/dark/2.jpg",
+			-- File = "/home/shaoran/图片/dark/2.jpg",
 			-- File = "/home/shaoran/图片/wallpaper/4.jpg",
 			-- File = "/home/shaoran/图片/SavedPictures/comic/1.png",
 			-- File = "/home/shaoran/图片/wallpaper/v2-d29a9ed9425ed9aae1d78cd5e9f3a9f1_r.png",
-			-- File = "/home/shaoran/图片/wallpaper/12.jpg",
 			-- File = "/home/shaoran/图片/dark/1.jpg",
 			-- File = "C:/Users/xiashaoran/图片/Saved Pictures/dark/2.jpg",
 		},
 		height = "Cover",
 		-- opacity = 0.5,
 		hsb = {
-			brightness = 1.2,
+			brightness = 0.8,
 			-- hue = 0.5,
 			-- saturation = 0.5,
 		},
@@ -120,7 +120,9 @@ config.font = wezterm.font_with_fallback({
 	-- "ComicShannsMono Nerd Font Mono",
 	-- "DaddyTimeMono Nerd Font Mono",
 	-- "FiraCode Nerd Font Mono",
+	-- 阿斯蒂芬森发达司法斯蒂芬
 	"CaskaydiaCove Nerd Font Mono",
+	"Noto Sans CJK SC",
 	"FantasqueSansM Nerd Font Mono",
 	"CodeNewRoman Nerd Font Mono",
 	"Hack Nerd Font Mono",
