@@ -81,8 +81,10 @@ config.color_scheme = "Novel"
 config.background = {
 	{
 		source = {
-			File = "/home/shaoran/图片/terminal-background/2.png",
 			-- File = "/home/shaoran/图片/wallpaper/v2-deb75bfa2835b28a27f27377f4173caf_r.png",
+			File = "/home/shaoran/图片/light/1.jpg",
+			-- File = "/home/shaoran/图片/light/3.jpg",
+			-- File = "/home/shaoran/图片/light/5.jpg",
 			-- File = "/home/shaoran/图片/dark/2.jpg",
 			-- File = "/home/shaoran/图片/wallpaper/4.jpg",
 			-- File = "/home/shaoran/图片/SavedPictures/comic/1.png",
@@ -99,17 +101,6 @@ config.background = {
 		},
 	},
 }
--- config.window_background_image_hsb = {
--- 	-- Darken the background image by reducing it to 1/3rd
--- 	brightness = 0.1,
---
--- 	-- You can adjust the hue by scaling its value.
--- 	-- a multiplier of 1.0 leaves the value unchanged.
--- 	hue = 1.0,
---
--- 	-- You can adjust the saturation also.
--- 	saturation = 1.0,
--- }
 
 config.font = wezterm.font_with_fallback({
 	-- "Comic Mono",
@@ -123,9 +114,9 @@ config.font = wezterm.font_with_fallback({
 	-- 阿斯蒂芬森发达司法斯蒂芬
 	"CaskaydiaCove Nerd Font Mono",
 	"Noto Sans CJK SC",
+	"Hack Nerd Font Mono",
 	"FantasqueSansM Nerd Font Mono",
 	"CodeNewRoman Nerd Font Mono",
-	"Hack Nerd Font Mono",
 	"SpaceMono Nerd Font Mono",
 	"Hurmit Nerd Font Mono",
 	-- "Cascadia Mono",
