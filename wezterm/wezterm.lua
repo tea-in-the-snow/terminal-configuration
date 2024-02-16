@@ -14,14 +14,14 @@ local act = wezterm.action
 
 -- This is where you actually apply your config choices
 
--- run wsl bu default
--- config.default_workspace = "~"
+-- lanuch zsh by default
+config.default_prog = { "/usr/bin/zsh", "-l" }
 
 config.detect_password_input = true
 
 -- color_schemes
 -- dark
--- config.color_scheme = "Apple Classic"
+config.color_scheme = "Apple Classic"
 -- config.color_scheme = "Chester"
 -- config.color_scheme = "DanQing (base16)"
 -- config.color_scheme = "Zenburn"
@@ -44,7 +44,7 @@ config.detect_password_input = true
 -- config.color_scheme = "Mocha (light) (terminal.sexy)"
 -- config.color_scheme = "purplepeter"
 -- config.color_scheme = "Solarized Light (Gogh)"
-config.color_scheme = "Novel"
+-- config.color_scheme = "Novel"
 
 -- config.font = wezterm.font("Hack Nerd Font Mono")
 -- config.font = wezterm.font("FiraCode Nerd Font Mono")
@@ -82,10 +82,9 @@ config.background = {
 	{
 		source = {
 			-- File = "/home/shaoran/图片/wallpaper/v2-deb75bfa2835b28a27f27377f4173caf_r.png",
-			File = "/home/shaoran/图片/light/1.jpg",
-			-- File = "/home/shaoran/图片/light/3.jpg",
-			-- File = "/home/shaoran/图片/light/5.jpg",
-			-- File = "/home/shaoran/图片/dark/2.jpg",
+			-- File = "/home/shaoran/图片/light/1.jpg",
+			-- File = "/home/shaoran/图片/light/2.png",
+			File = "/home/shaoran/图片/dark/6.jpg",
 			-- File = "/home/shaoran/图片/wallpaper/4.jpg",
 			-- File = "/home/shaoran/图片/SavedPictures/comic/1.png",
 			-- File = "/home/shaoran/图片/wallpaper/v2-d29a9ed9425ed9aae1d78cd5e9f3a9f1_r.png",
@@ -95,7 +94,7 @@ config.background = {
 		height = "Cover",
 		-- opacity = 0.5,
 		hsb = {
-			brightness = 0.8,
+			brightness = 0.1,
 			-- hue = 0.5,
 			-- saturation = 0.5,
 		},
@@ -126,19 +125,6 @@ config.font = wezterm.font_with_fallback({
 	"MT Extra",
 })
 config.font_size = 15.0
-
--- config.command_palette_bg_color = "#333333"
--- config.command_palette_bg_color = "#2F2F4F"
-
--- -- wezterm.on("gui-startup", function(cmd)
--- 	local tab, pane, window = wezterm.mux.spawn_window(cmd or {})
--- 	-- Create a split occupying the right 1/3 of the screen
--- 	pane:split({ size = 0.5 })
--- 	-- Create another split in the right of the remaining 2/3
--- 	-- of the space; the resultant split is in the middle
--- 	-- 1/3 of the display and has the focus.
--- 	-- pane:split { size = 0.5 }
--- end)
 
 config.enable_tab_bar = true
 
