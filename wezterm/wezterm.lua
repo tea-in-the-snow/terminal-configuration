@@ -94,7 +94,7 @@ config.background = {
 		height = "Cover",
 		-- opacity = 0.5,
 		hsb = {
-			brightness = 0.1,
+			brightness = 0.3,
 			-- hue = 0.5,
 			-- saturation = 0.5,
 		},
@@ -102,21 +102,16 @@ config.background = {
 }
 
 config.font = wezterm.font_with_fallback({
-	-- "Comic Mono",
-	-- "GoMono Nerd Font Mono",
-	-- "ShureTechMono Nerd Font Mono",
-	-- "CaskaydiaCove Nerd Font Mono",
-
-	-- "ComicShannsMono Nerd Font Mono",
-	-- "DaddyTimeMono Nerd Font Mono",
-	-- "FiraCode Nerd Font Mono",
-	-- 阿斯蒂芬森发达司法斯蒂芬
+	"SauceCodePro Nerd Font Mono",
 	"CaskaydiaCove Nerd Font Mono",
-	"Noto Sans CJK SC",
+	"SpaceMono Nerd Font Mono",
+	"JetBrainsMono Nerd Font Mono",
 	"Hack Nerd Font Mono",
 	"FantasqueSansM Nerd Font Mono",
+	"Noto Sans CJK SC",
+	"UbuntuMono Nerd Font Mono",
+	"Terminess Nerd Font Mono",
 	"CodeNewRoman Nerd Font Mono",
-	"SpaceMono Nerd Font Mono",
 	"Hurmit Nerd Font Mono",
 	-- "Cascadia Mono",
 	"DengXian", --Chinese
