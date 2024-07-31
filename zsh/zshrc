@@ -104,7 +104,17 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#87afff"
 # export https_proxy=http://127.0.0.1:7890
 alias proxy_on='export http_proxy=http://127.0.0.1:7890 && export https_proxy=http://127.0.0.1:7890 && echo -e http and https proxy on'
 alias proxy_off='unset https_proxy http_proxy && echo -e http and https proxy off'
-# alias git_proxy_on='git config --global http.proxy 127.0.0.1:7890 && git config --global https.proxy 127.0.0.1:7890'
-# alias git_proxy_off='git config --global --unset http.proxy && git config --global --unset https.proxy'
+alias git_proxy_on='git config --global http.proxy 127.0.0.1:7890 && git config --global https.proxy 127.0.0.1:7890 && echo -e git proxy on'
+alias git_proxy_off='git config --global --unset http.proxy && git config --global --unset https.proxy && echo -e git proxy off'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# yazi configuration
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}

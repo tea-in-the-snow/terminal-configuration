@@ -17,6 +17,10 @@ local act = wezterm.action
 -- lanuch zsh by default
 config.default_prog = { "/usr/bin/zsh", "-l" }
 
+-- The initial window size when launching wezterm
+config.initial_cols = 120
+config.initial_rows = 35
+
 config.detect_password_input = true
 
 -- color_schemes
@@ -84,7 +88,7 @@ config.background = {
 			-- File = "/home/shaoran/图片/wallpaper/v2-deb75bfa2835b28a27f27377f4173caf_r.png",
 			-- File = "/home/shaoran/图片/light/1.jpg",
 			-- File = "/home/shaoran/图片/light/2.png",
-			File = "/home/shaoran/图片/dark/6.jpg",
+			File = "/home/shaoran/Pictures/dark/6.jpg",
 			-- File = "/home/shaoran/图片/wallpaper/4.jpg",
 			-- File = "/home/shaoran/图片/SavedPictures/comic/1.png",
 			-- File = "/home/shaoran/图片/wallpaper/v2-d29a9ed9425ed9aae1d78cd5e9f3a9f1_r.png",
@@ -102,7 +106,6 @@ config.background = {
 }
 
 config.font = wezterm.font_with_fallback({
-	"SauceCodePro Nerd Font Mono",
 	"CaskaydiaCove Nerd Font Mono",
 	"SpaceMono Nerd Font Mono",
 	"JetBrainsMono Nerd Font Mono",
