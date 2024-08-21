@@ -1186,7 +1186,7 @@ window_padding_width 0 10
 
 #: The foreground and background colors.
 
-background_opacity 0.9
+background_opacity 0.8
 
 #: The opacity of the background. A number between zero and one, where
 #: one is opaque and zero is fully transparent. This will only work if
@@ -1222,7 +1222,7 @@ background_opacity 0.9
 #: platform implements it, so use with care. Currently supported on
 #: macOS and KDE.
 
-# background_image '~/Pictures/dark/6.png'
+# background_image '/home/shaoran/Pictures/dark/6.png'
 
 #: Path to a background image. Must be in PNG format.
 
@@ -2558,6 +2558,6 @@ editor vim
 
 
 # BEGIN_KITTY_THEME
-# 1984 Dark
+# Jet Brains Darcula
 include current-theme.conf
 # END_KITTY_THEME
