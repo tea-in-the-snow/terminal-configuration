@@ -31,4 +31,6 @@ if status is-interactive
 	end
 	rm -f -- "$tmp"
     end
+
+    fish_config prompt choose astronaut
 end
