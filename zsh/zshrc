@@ -22,6 +22,9 @@ compinit
 
 # export HISTFILE = "~/.histfile"
 
+# Homebrew config
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 # Load starship
 eval "$(starship init zsh)"
 
