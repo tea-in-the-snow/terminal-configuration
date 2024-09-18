@@ -25,6 +25,9 @@ compinit
 # Load starship
 eval "$(starship init zsh)"
 
+# rust environment
+export PATH=$PATH:$HOME/.cargo/env
+
 # add the path of go and those installed by go
 # export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:~/go/bin
