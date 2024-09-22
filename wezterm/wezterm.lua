@@ -25,13 +25,12 @@ config.detect_password_input = true
 
 -- color_schemes
 -- dark
-config.color_scheme = "Apple Classic"
+-- config.color_scheme = "Apple Classic"
 -- config.color_scheme = "Chester"
 -- config.color_scheme = "DanQing (base16)"
 -- config.color_scheme = "Zenburn"
--- config.color_scheme = "Unikitty Reversible (base16)"
+config.color_scheme = "Unikitty Reversible (base16)"
 -- config.color_scheme = "Sakura"
--- config.color_scheme = "Sea Shells (Gogh)"
 -- config.color_scheme = "Pasque (base16)"
 -- config.color_scheme = "Obsidian"
 
@@ -41,13 +40,11 @@ config.color_scheme = "Apple Classic"
 
 -- light
 -- config.color_scheme = "Builtin Solarized Light"
--- config.color_scheme = "Catppuccin Latte"
 -- config.color_scheme = "dawnfox"
 -- config.color_scheme = "Catppuccin Latte"
 -- config.color_scheme = "Default (light) (terminal.sexy)"
 -- config.color_scheme = "Mocha (light) (terminal.sexy)"
 -- config.color_scheme = "purplepeter"
--- config.color_scheme = "Solarized Light (Gogh)"
 -- config.color_scheme = "Novel"
 
 -- config.font = wezterm.font("Hack Nerd Font Mono")
@@ -55,7 +52,7 @@ config.color_scheme = "Apple Classic"
 -- config.font = wezterm.font("Cascadia Code")
 
 -- config.window_background_gradient = {
--- 	colors = { "white", "pink" },
+-- 	colors = { "black", "grey" },
 -- 	orientation = {
 -- 		Radial = {
 -- 			-- Specifies the x coordinate of the center of the circle,
@@ -98,7 +95,7 @@ config.background = {
 		height = "Cover",
 		-- opacity = 0.5,
 		hsb = {
-			brightness = 0.3,
+			brightness = 0.1,
 			-- hue = 0.5,
 			-- saturation = 0.5,
 		},
@@ -107,20 +104,19 @@ config.background = {
 
 config.font = wezterm.font_with_fallback({
 	"CaskaydiaCove Nerd Font Mono",
-	"SpaceMono Nerd Font Mono",
-	"JetBrainsMono Nerd Font Mono",
-	"Hack Nerd Font Mono",
 	"FantasqueSansM Nerd Font Mono",
-	"Noto Sans CJK SC",
+	"JetBrainsMono Nerd Font Mono",
+	"SpaceMono Nerd Font Mono",
+	"Hack Nerd Font Mono",
 	"UbuntuMono Nerd Font Mono",
 	"Terminess Nerd Font Mono",
 	"CodeNewRoman Nerd Font Mono",
 	"Hurmit Nerd Font Mono",
 	-- "Cascadia Mono",
-	"DengXian", --Chinese
-	"Nishiki-teki",
-	"Lotuscoder",
-	"MT Extra",
+	-- Chinese font
+	"LXGW WenKai Mono",
+	"Noto Sans CJK SC",
+	"DengXian",
 })
 config.font_size = 15.0
 
