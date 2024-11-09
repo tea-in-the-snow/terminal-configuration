@@ -26,7 +26,7 @@ compinit
 # eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Load starship
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
 # rust environment
 export PATH=$PATH:$HOME/.cargo/env
@@ -92,8 +92,8 @@ zinit snippet OMZ::lib/completion.zsh
 zinit snippet OMZ::lib/git.zsh
 
 # pure zsh prompt
-zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
-zinit light sindresorhus/pure
+# zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
+# zinit light sindresorhus/pure
 
 # plugins
 zinit ice lucid wait='0' atload='_zsh_autosuggest_start'
