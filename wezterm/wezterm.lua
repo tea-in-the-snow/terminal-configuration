@@ -25,7 +25,7 @@ config.detect_password_input = true
 
 -- color_schemes
 -- dark
--- config.color_scheme = "Apple Classic"
+config.color_scheme = "Apple Classic"
 -- config.color_scheme = "Chester"
 -- config.color_scheme = "DanQing (base16)"
 -- config.color_scheme = "Zenburn"
@@ -35,7 +35,8 @@ config.detect_password_input = true
 -- config.color_scheme = "Obsidian"
 -- config.color_scheme = "3024 (base16)"
 -- config.color_scheme = "Mariana"
-config.color_scheme = "midnight-in-mojave"
+--
+-- config.color_scheme = "midnight-in-mojave"
 -- config.color_scheme = "Cobalt 2 (Gogh)"
 -- config.color_scheme = "Cobalt Neon"
 -- config.color_scheme = "Galaxy"
@@ -89,15 +90,7 @@ config.color_scheme = "midnight-in-mojave"
 config.background = {
 	{
 		source = {
-			-- File = "/home/shaoran/图片/wallpaper/v2-deb75bfa2835b28a27f27377f4173caf_r.png",
-			-- File = "/home/shaoran/图片/light/1.jpg",
-			File = "/home/shaoran/图片/smoke.png",
-			-- File = "/home/shaoran/Pictures/dark/6.jpg",
-			-- File = "/home/shaoran/图片/wallpaper/4.jpg",
-			-- File = "/home/shaoran/图片/SavedPictures/comic/1.png",
-			-- File = "/home/shaoran/图片/wallpaper/v2-d29a9ed9425ed9aae1d78cd5e9f3a9f1_r.png",
-			-- File = "/home/shaoran/图片/dark/1.jpg",
-			-- File = "C:/Users/xiashaoran/图片/Saved Pictures/dark/2.jpg",
+			File = "/home/shaoran/Pictures/dark/6.jpg",
 		},
 		height = "Cover",
 		-- opacity = 0.5,
@@ -125,7 +118,7 @@ config.font = wezterm.font_with_fallback({
 	"Noto Sans CJK SC",
 	"DengXian",
 })
-config.font_size = 15.0
+config.font_size = 13.0
 
 config.enable_tab_bar = true
 
@@ -139,7 +132,7 @@ config.window_padding = {
 config.window_close_confirmation = "NeverPrompt"
 
 -- cursor
-config.default_cursor_style = "BlinkingBar"
+config.default_cursor_style = "BlinkingUnderline"
 config.cursor_blink_rate = 600
 config.cursor_blink_ease_out = "Linear"
 
